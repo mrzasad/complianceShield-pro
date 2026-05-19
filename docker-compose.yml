@@ -1,0 +1,19 @@
+version: "3.9"
+
+services:
+  compliance-pipeline:
+    build: .
+    image: complianceshield:latest
+    container_name: compliance_pipeline
+    ports:
+      - "8501:8501"
+    environment:
+      - PYTHONUNBUFFERED=1
+    volumes:
+      - ./audit_logs:/app/audit_logs       # persistent audit log export
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8501/_stcore/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
