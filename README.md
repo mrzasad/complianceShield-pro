@@ -138,10 +138,21 @@ compliance_pipeline/
 ├── requirements.txt
 ├── README.md
 └── pipeline/
-    ├── __init__.py
+    ├── __init__.py                                                                            `                             
     ├── interceptor.py       # Stage 1: Data interception + checksums
     ├── auditor.py           # Stage 2: GDPR/PECA rule engine
     ├── encryptor.py         # Stage 3: AES-256-GCM encryption
     ├── logger.py            # Stage 4: Structured audit logging
     └── spark_engine.py      # Spark/Airflow execution simulation
+
 ```
+
+<img width="1572" height="642" alt="Screenshot 2026-05-19 083230" src="https://github.com/user-attachments/assets/287eef0a-c3a4-45ce-abbe-211d28c3de59" />
+<img width="1461" height="748" alt="Screenshot 2026-05-19 083215" src="https://github.com/user-attachments/assets/98fcb921-2575-4579-86bb-89ef3fee9e86" />
+<img width="1447" height="880" alt="Screenshot 2026-05-19 083144" src="https://github.com/user-attachments/assets/45082ec0-4091-41b7-ba97-54ee95a0d6ad" />
+<img width="1795" height="791" alt="Screenshot 2026-05-19 083048" src="https://github.com/user-attachments/assets/e5718d42-c7cf-4dd1-9885-2e5a9ff5233f" />
+<img width="1561" height="695" alt="Screenshot 2026-05-19 083424" src="https://github.com/user-attachments/assets/7a1777bf-92ec-4036-b332-bd47f9a896ef" />
+<img width="1515" height="811" alt="Screenshot 2026-05-19 083358" src="https://github.com/user-attachments/assets/f874f8f7-3ff4-4d51-bc11-6b8b51c41152" />
+<img width="1493" height="797" alt="Screenshot 2026-05-19 083335" src="https://github.com/user-attachments/assets/58d4194a-7842-4079-8cc5-0c965422e481" />
+<img width="1490" height="767" alt="Screenshot 2026-05-19 083309" src="https://github.com/user-attachments/assets/f5338a22-ef18-470c-be78-46daa4c6bc9f" />
+
